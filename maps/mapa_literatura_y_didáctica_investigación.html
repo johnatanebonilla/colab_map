@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cabd58d2c30441610b275cc03cd99696 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cabd58d2c30441610b275cc03cd99696" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cabd58d2c30441610b275cc03cd99696 = L.map(
+                "map_cabd58d2c30441610b275cc03cd99696",
+                {
+                    center: [36.5, -6.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b832378ec021b7aed73f31e9cdf984b5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b832378ec021b7aed73f31e9cdf984b5.addTo(map_cabd58d2c30441610b275cc03cd99696);
+        
+    
+            var marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_19121b0d8a930ff6e338d29d7eab9df0 = L.marker(
+                [40.4451, -3.7296],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_a03995aa83f78b7aeed479dffb7ef576 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645e64bf2e34c71f5d0b43fdc7e84a4c = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_78a862f3a3b8786baa624ffe916b3bd7 = $(`<div id="html_78a862f3a3b8786baa624ffe916b3bd7" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad Complutense de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Diego Santos Sánchez <br><b>Detalle:</b> Literatura y franquismo, J. Dünne</div>`)[0];
+                popup_645e64bf2e34c71f5d0b43fdc7e84a4c.setContent(html_78a862f3a3b8786baa624ffe916b3bd7);
+            
+        
+
+        marker_19121b0d8a930ff6e338d29d7eab9df0.bindPopup(popup_645e64bf2e34c71f5d0b43fdc7e84a4c)
+        ;
+
+        
+    
+    
+            marker_19121b0d8a930ff6e338d29d7eab9df0.bindTooltip(
+                `<div>
+                     Universidad Complutense de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19121b0d8a930ff6e338d29d7eab9df0.setIcon(icon_a03995aa83f78b7aeed479dffb7ef576);
+            
+    
+            var marker_07e231f02b3c71ca23729ed9bdab2f9c = L.marker(
+                [40.4451, -3.7296],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_d37f57149127998d9da5829b4e5467c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6e7639c480e41b13a04322313ed0509 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_bbdaec651fbba85015d26f028f06caeb = $(`<div id="html_bbdaec651fbba85015d26f028f06caeb" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad Complutense de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Margarita Borreguero Zuloaga <br><b>Detalle:</b> Didáctica, C. Koch</div>`)[0];
+                popup_b6e7639c480e41b13a04322313ed0509.setContent(html_bbdaec651fbba85015d26f028f06caeb);
+            
+        
+
+        marker_07e231f02b3c71ca23729ed9bdab2f9c.bindPopup(popup_b6e7639c480e41b13a04322313ed0509)
+        ;
+
+        
+    
+    
+            marker_07e231f02b3c71ca23729ed9bdab2f9c.bindTooltip(
+                `<div>
+                     Universidad Complutense de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07e231f02b3c71ca23729ed9bdab2f9c.setIcon(icon_d37f57149127998d9da5829b4e5467c3);
+            
+    
+            var marker_a1b9faeae758c27e5d17258d6105bf34 = L.marker(
+                [40.4829, -3.3631],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_9756a174a6b99e5c6d343caaa81ac17a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1421c4e1498fdd1de61f4acf88d9b1fa = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_db15d81064b8f4c25ba6ef469cf98995 = $(`<div id="html_db15d81064b8f4c25ba6ef469cf98995" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad de Alcalá<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Fernando Larraz Elorriaga<br><b>Detalle:</b> Exilio republicano, J. Dünne</div>`)[0];
+                popup_1421c4e1498fdd1de61f4acf88d9b1fa.setContent(html_db15d81064b8f4c25ba6ef469cf98995);
+            
+        
+
+        marker_a1b9faeae758c27e5d17258d6105bf34.bindPopup(popup_1421c4e1498fdd1de61f4acf88d9b1fa)
+        ;
+
+        
+    
+    
+            marker_a1b9faeae758c27e5d17258d6105bf34.bindTooltip(
+                `<div>
+                     Universidad de Alcalá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1b9faeae758c27e5d17258d6105bf34.setIcon(icon_9756a174a6b99e5c6d343caaa81ac17a);
+            
+    
+            var marker_b45620b3cc7457502d79829949146ea1 = L.marker(
+                [37.1899, -3.6025],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_01e4e1ee3d4d23e4ba866b048760070e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c420461028dd0e435731b0ba065ad74 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_01d4463f86378ae4e56bc2d2c0b86d38 = $(`<div id="html_01d4463f86378ae4e56bc2d2c0b86d38" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad de Granada<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Azucena González Blanco <br><b>Detalle:</b> Literatura, M. Bengert</div>`)[0];
+                popup_2c420461028dd0e435731b0ba065ad74.setContent(html_01d4463f86378ae4e56bc2d2c0b86d38);
+            
+        
+
+        marker_b45620b3cc7457502d79829949146ea1.bindPopup(popup_2c420461028dd0e435731b0ba065ad74)
+        ;
+
+        
+    
+    
+            marker_b45620b3cc7457502d79829949146ea1.bindTooltip(
+                `<div>
+                     Universidad de Granada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b45620b3cc7457502d79829949146ea1.setIcon(icon_01e4e1ee3d4d23e4ba866b048760070e);
+            
+    
+            var marker_5cbfd2c11616eaab3317017924e97ad3 = L.marker(
+                [37.1899, -3.6025],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_e17f50c36ea88dc77ec2893949ab4f0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2734d637728b6361028a4e6cef68fb4e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_a09328dff64d7aec57fe1a7fbab15b95 = $(`<div id="html_a09328dff64d7aec57fe1a7fbab15b95" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad de Granada<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Juan Antonio Macía-Amoretti <br><b>Detalle:</b> Literatura y política,  M. Raič</div>`)[0];
+                popup_2734d637728b6361028a4e6cef68fb4e.setContent(html_a09328dff64d7aec57fe1a7fbab15b95);
+            
+        
+
+        marker_5cbfd2c11616eaab3317017924e97ad3.bindPopup(popup_2734d637728b6361028a4e6cef68fb4e)
+        ;
+
+        
+    
+    
+            marker_5cbfd2c11616eaab3317017924e97ad3.bindTooltip(
+                `<div>
+                     Universidad de Granada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5cbfd2c11616eaab3317017924e97ad3.setIcon(icon_e17f50c36ea88dc77ec2893949ab4f0e);
+            
+    
+            var marker_16e4cc3a87ab56200f8062b5a7f466c9 = L.marker(
+                [40.9627, -5.6678],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_a73227a79abec2f84ca3c9de782a7ba0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e7fd7f55d092d3cecc2488b3fdca397 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_4542513cde9b3eddefc000f974021acb = $(`<div id="html_4542513cde9b3eddefc000f974021acb" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universidad de Salamanca<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Victor Bermúdez<br><b>Detalle:</b> Traducción poética</div>`)[0];
+                popup_5e7fd7f55d092d3cecc2488b3fdca397.setContent(html_4542513cde9b3eddefc000f974021acb);
+            
+        
+
+        marker_16e4cc3a87ab56200f8062b5a7f466c9.bindPopup(popup_5e7fd7f55d092d3cecc2488b3fdca397)
+        ;
+
+        
+    
+    
+            marker_16e4cc3a87ab56200f8062b5a7f466c9.bindTooltip(
+                `<div>
+                     Universidad de Salamanca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16e4cc3a87ab56200f8062b5a7f466c9.setIcon(icon_a73227a79abec2f84ca3c9de782a7ba0);
+            
+    
+            var marker_8316ca4b628a79e746ef5ba0f45a16f1 = L.marker(
+                [41.5, 2.1047],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_aad459c245ee1a5091a9f51160f03716 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44d575c53107d0f86a42b564c5412881 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_b1cd3bf4ea60f68ba6708edcfc9a6a95 = $(`<div id="html_b1cd3bf4ea60f68ba6708edcfc9a6a95" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universitat Autònoma de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dolors Masats<br><b>Detalle:</b> Didáctica, C. Koch</div>`)[0];
+                popup_44d575c53107d0f86a42b564c5412881.setContent(html_b1cd3bf4ea60f68ba6708edcfc9a6a95);
+            
+        
+
+        marker_8316ca4b628a79e746ef5ba0f45a16f1.bindPopup(popup_44d575c53107d0f86a42b564c5412881)
+        ;
+
+        
+    
+    
+            marker_8316ca4b628a79e746ef5ba0f45a16f1.bindTooltip(
+                `<div>
+                     Universitat Autònoma de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8316ca4b628a79e746ef5ba0f45a16f1.setIcon(icon_aad459c245ee1a5091a9f51160f03716);
+            
+    
+            var marker_3a1bcb5f400224ad3c36fd0aea8b245c = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_6bb7304101f3d616a0b2323f50296d8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60a8e21256cc6a8b03ddcfb1c8a8c6ec = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_92d5f633fa9af8d8c664e78f1f833f3e = $(`<div id="html_92d5f633fa9af8d8c664e78f1f833f3e" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Bernat Pardó Nieto<br><b>Detalle:</b> Vanguardia, M. Raič</div>`)[0];
+                popup_60a8e21256cc6a8b03ddcfb1c8a8c6ec.setContent(html_92d5f633fa9af8d8c664e78f1f833f3e);
+            
+        
+
+        marker_3a1bcb5f400224ad3c36fd0aea8b245c.bindPopup(popup_60a8e21256cc6a8b03ddcfb1c8a8c6ec)
+        ;
+
+        
+    
+    
+            marker_3a1bcb5f400224ad3c36fd0aea8b245c.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a1bcb5f400224ad3c36fd0aea8b245c.setIcon(icon_6bb7304101f3d616a0b2323f50296d8d);
+            
+    
+            var marker_8b8bb87097d184d59f51361c5b928ab1 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_6ef62f8b433afb05d795dbcc2614f003 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c51a1a7a75057244cdd2449dde17ea = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_4954c722d3f9280cbe8ac13fcb85c4d4 = $(`<div id="html_4954c722d3f9280cbe8ac13fcb85c4d4" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Elina Rosado<br><b>Detalle:</b> Didáctica, C. Koch</div>`)[0];
+                popup_09c51a1a7a75057244cdd2449dde17ea.setContent(html_4954c722d3f9280cbe8ac13fcb85c4d4);
+            
+        
+
+        marker_8b8bb87097d184d59f51361c5b928ab1.bindPopup(popup_09c51a1a7a75057244cdd2449dde17ea)
+        ;
+
+        
+    
+    
+            marker_8b8bb87097d184d59f51361c5b928ab1.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b8bb87097d184d59f51361c5b928ab1.setIcon(icon_6ef62f8b433afb05d795dbcc2614f003);
+            
+    
+            var marker_d6f35f32f03bb5512b63c2abb7a5022c = L.marker(
+                [39.636, 2.648],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_9f10bbb49922d42c7b33a2b7ec2cfed8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11820ba0df3cc12a1912b1c8931ff9da = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_0741248d72380a8778872a0809f2850b = $(`<div id="html_0741248d72380a8778872a0809f2850b" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universitat de les Illes Balears<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Iban Mañas Navarrete<br><b>Detalle:</b> Didáctica, C. Koch</div>`)[0];
+                popup_11820ba0df3cc12a1912b1c8931ff9da.setContent(html_0741248d72380a8778872a0809f2850b);
+            
+        
+
+        marker_d6f35f32f03bb5512b63c2abb7a5022c.bindPopup(popup_11820ba0df3cc12a1912b1c8931ff9da)
+        ;
+
+        
+    
+    
+            marker_d6f35f32f03bb5512b63c2abb7a5022c.bindTooltip(
+                `<div>
+                     Universitat de les Illes Balears
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6f35f32f03bb5512b63c2abb7a5022c.setIcon(icon_9f10bbb49922d42c7b33a2b7ec2cfed8);
+            
+    
+            var marker_506f8e9937b15328e9e5f1f2995198bc = L.marker(
+                [41.4148, 2.1336],
+                {
+}
+            ).addTo(marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd);
+        
+    
+            var icon_0775d0051d71f79f62296810791c04b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_495865d891e31a632a2420283bfc97ac = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_fd958923e85a49039fcadea2ee8f20a3 = $(`<div id="html_fd958923e85a49039fcadea2ee8f20a3" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Literatura y didáctica<br><b>Universidad:</b> Universitat Oberta de Catalunya<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Laura Fólica<br><b>Detalle:</b> Lit. global, M. Raič</div>`)[0];
+                popup_495865d891e31a632a2420283bfc97ac.setContent(html_fd958923e85a49039fcadea2ee8f20a3);
+            
+        
+
+        marker_506f8e9937b15328e9e5f1f2995198bc.bindPopup(popup_495865d891e31a632a2420283bfc97ac)
+        ;
+
+        
+    
+    
+            marker_506f8e9937b15328e9e5f1f2995198bc.bindTooltip(
+                `<div>
+                     Universitat Oberta de Catalunya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_506f8e9937b15328e9e5f1f2995198bc.setIcon(icon_0775d0051d71f79f62296810791c04b0);
+            
+    
+            marker_cluster_d695e7686a9d5d1fb78ebc901c0d0bcd.addTo(map_cabd58d2c30441610b275cc03cd99696);
+        
+    
+            map_cabd58d2c30441610b275cc03cd99696.fitBounds(
+                [[27.5, -18.5], [44, 4]],
+                {}
+            );
+        
+</script>
+</html>

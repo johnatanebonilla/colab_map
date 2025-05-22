@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd49d853c00ce07cc6870191dcc00817 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd49d853c00ce07cc6870191dcc00817" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd49d853c00ce07cc6870191dcc00817 = L.map(
+                "map_fd49d853c00ce07cc6870191dcc00817",
+                {
+                    center: [36.5, -6.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81c0e78210ee50b55ed5182e03dd7dad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_81c0e78210ee50b55ed5182e03dd7dad.addTo(map_fd49d853c00ce07cc6870191dcc00817);
+        
+    
+            var marker_cluster_638e4eb94a9ed84c51768f31089550fa = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f8ca49e78d07b714fea9221e6f35ee30 = L.marker(
+                [40.4419, -3.6875],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_566fb20cd16c506d02dcbebc46b1b475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f079ce6336c741ebe636df3386251e6b = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_57185d165a78ccc56fb5ed7171417b1a = $(`<div id="html_57185d165a78ccc56fb5ed7171417b1a" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> CSIC, Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Almudena Cabreras Iglesias<br><b>Detalle:</b> Investigador visitante: SoSe 2025; Doctoranda</div>`)[0];
+                popup_f079ce6336c741ebe636df3386251e6b.setContent(html_57185d165a78ccc56fb5ed7171417b1a);
+            
+        
+
+        marker_f8ca49e78d07b714fea9221e6f35ee30.bindPopup(popup_f079ce6336c741ebe636df3386251e6b)
+        ;
+
+        
+    
+    
+            marker_f8ca49e78d07b714fea9221e6f35ee30.bindTooltip(
+                `<div>
+                     CSIC, Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8ca49e78d07b714fea9221e6f35ee30.setIcon(icon_566fb20cd16c506d02dcbebc46b1b475);
+            
+    
+            var marker_7b326b7c64edae6ae0cee7a68032d5a1 = L.marker(
+                [40.4419, -3.6875],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_77f606cf1ce8156d79acb664e3841b30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a78c8e0f855216201c171d80fcd63467 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_45e7c7983583f52c7e382104c8c1b660 = $(`<div id="html_45e7c7983583f52c7e382104c8c1b660" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> CSIC, Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Álvaro Octavio de Toledo y Huerta<br><b>Detalle:</b> LIMES</div>`)[0];
+                popup_a78c8e0f855216201c171d80fcd63467.setContent(html_45e7c7983583f52c7e382104c8c1b660);
+            
+        
+
+        marker_7b326b7c64edae6ae0cee7a68032d5a1.bindPopup(popup_a78c8e0f855216201c171d80fcd63467)
+        ;
+
+        
+    
+    
+            marker_7b326b7c64edae6ae0cee7a68032d5a1.bindTooltip(
+                `<div>
+                     CSIC, Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b326b7c64edae6ae0cee7a68032d5a1.setIcon(icon_77f606cf1ce8156d79acb664e3841b30);
+            
+    
+            var marker_3532df2a69f37c0084a4fb1ed88a7f67 = L.marker(
+                [40.544, -3.692],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_82cbaa03f366dd67bc267ac44c053da3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2e0d7efee0708e38e69cf0c19290b79 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_dbbe0e43ce7a8a2021ddb8af75365306 = $(`<div id="html_dbbe0e43ce7a8a2021ddb8af75365306" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad Autónoma de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Inés Fernández-Ordóñez<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_f2e0d7efee0708e38e69cf0c19290b79.setContent(html_dbbe0e43ce7a8a2021ddb8af75365306);
+            
+        
+
+        marker_3532df2a69f37c0084a4fb1ed88a7f67.bindPopup(popup_f2e0d7efee0708e38e69cf0c19290b79)
+        ;
+
+        
+    
+    
+            marker_3532df2a69f37c0084a4fb1ed88a7f67.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3532df2a69f37c0084a4fb1ed88a7f67.setIcon(icon_82cbaa03f366dd67bc267ac44c053da3);
+            
+    
+            var marker_0c330f32310c9d67e0c7532ea30b3de8 = L.marker(
+                [40.544, -3.692],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_ec2e15409854b044cd53b588dece5ff8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6913cb9ee56d297825077952d59d5bf = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_49758bdd73692b6c9785a8d7b4a74837 = $(`<div id="html_49758bdd73692b6c9785a8d7b4a74837" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad Autónoma de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra. Carlota de Benito Moreno<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_e6913cb9ee56d297825077952d59d5bf.setContent(html_49758bdd73692b6c9785a8d7b4a74837);
+            
+        
+
+        marker_0c330f32310c9d67e0c7532ea30b3de8.bindPopup(popup_e6913cb9ee56d297825077952d59d5bf)
+        ;
+
+        
+    
+    
+            marker_0c330f32310c9d67e0c7532ea30b3de8.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c330f32310c9d67e0c7532ea30b3de8.setIcon(icon_ec2e15409854b044cd53b588dece5ff8);
+            
+    
+            var marker_45e82a39bcafa13a6aa8a26f31fb8048 = L.marker(
+                [40.544, -3.692],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_fe192f07a1ab994bea516c43bd7ade6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_087968d2ebf35b0a2d887c6cd81de8e3 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_f2ab8b192287b1deb4bba942175b1b17 = $(`<div id="html_f2ab8b192287b1deb4bba942175b1b17" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad Autónoma de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra. Carlota de Benito Moreno<br><b>Detalle:</b> COSER; RurICan; SFB A09; Posesivos en el canario, COSERI-U</div>`)[0];
+                popup_087968d2ebf35b0a2d887c6cd81de8e3.setContent(html_f2ab8b192287b1deb4bba942175b1b17);
+            
+        
+
+        marker_45e82a39bcafa13a6aa8a26f31fb8048.bindPopup(popup_087968d2ebf35b0a2d887c6cd81de8e3)
+        ;
+
+        
+    
+    
+            marker_45e82a39bcafa13a6aa8a26f31fb8048.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45e82a39bcafa13a6aa8a26f31fb8048.setIcon(icon_fe192f07a1ab994bea516c43bd7ade6d);
+            
+    
+            var marker_f764ae9248c91a25791eb4e0ad61ad4e = L.marker(
+                [40.544, -3.692],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_8bc64091656d408f86e15034d880546a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4db72694a78e3016f75b70bf9011fd64 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_70dfcc52dc2abf852ed9796cc084e687 = $(`<div id="html_70dfcc52dc2abf852ed9796cc084e687" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad Autónoma de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Inés Fernández-Ordóñez<br><b>Detalle:</b> COSER; COSER-UD; Juegos del español</div>`)[0];
+                popup_4db72694a78e3016f75b70bf9011fd64.setContent(html_70dfcc52dc2abf852ed9796cc084e687);
+            
+        
+
+        marker_f764ae9248c91a25791eb4e0ad61ad4e.bindPopup(popup_4db72694a78e3016f75b70bf9011fd64)
+        ;
+
+        
+    
+    
+            marker_f764ae9248c91a25791eb4e0ad61ad4e.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f764ae9248c91a25791eb4e0ad61ad4e.setIcon(icon_8bc64091656d408f86e15034d880546a);
+            
+    
+            var marker_268eb9a27ab639dbfa8b5f3ba34734b6 = L.marker(
+                [40.4451, -3.7296],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_f57307d77db138075d28f01720489ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc94b866480df86de740edd7f5b855a4 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_852e0cf6662670e3646228d79886f371 = $(`<div id="html_852e0cf6662670e3646228d79886f371" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad Complutense de Madrid<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Javier Rodríguez Molina<br><b>Detalle:</b> LIMES</div>`)[0];
+                popup_dc94b866480df86de740edd7f5b855a4.setContent(html_852e0cf6662670e3646228d79886f371);
+            
+        
+
+        marker_268eb9a27ab639dbfa8b5f3ba34734b6.bindPopup(popup_dc94b866480df86de740edd7f5b855a4)
+        ;
+
+        
+    
+    
+            marker_268eb9a27ab639dbfa8b5f3ba34734b6.bindTooltip(
+                `<div>
+                     Universidad Complutense de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_268eb9a27ab639dbfa8b5f3ba34734b6.setIcon(icon_f57307d77db138075d28f01720489ce9);
+            
+    
+            var marker_2a8a23591013bdeb48649083bb873f7e = L.marker(
+                [37.1899, -3.6025],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_2d6946a1924e49fac03acfa6884059b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f04ac173f8dfb8bda2e3a6df5479a0e7 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_4086b1a9634738dde3e55cd9149b4b3b = $(`<div id="html_4086b1a9634738dde3e55cd9149b4b3b" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Granada<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra Pilar Arrabal<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_f04ac173f8dfb8bda2e3a6df5479a0e7.setContent(html_4086b1a9634738dde3e55cd9149b4b3b);
+            
+        
+
+        marker_2a8a23591013bdeb48649083bb873f7e.bindPopup(popup_f04ac173f8dfb8bda2e3a6df5479a0e7)
+        ;
+
+        
+    
+    
+            marker_2a8a23591013bdeb48649083bb873f7e.bindTooltip(
+                `<div>
+                     Universidad de Granada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a8a23591013bdeb48649083bb873f7e.setIcon(icon_2d6946a1924e49fac03acfa6884059b9);
+            
+    
+            var marker_7c832b644b004ad22f2946c2cec41ef5 = L.marker(
+                [37.1899, -3.6025],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_45674f38684c491e1def85c5ca2aec2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d2e51917eb57ab8c296a69950ab743f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_ca02406f339ac5f2ac59c1efc4bedf9f = $(`<div id="html_ca02406f339ac5f2ac59c1efc4bedf9f" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Granada<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra Pilar Arrabal<br><b>Detalle:</b> COSER; Dialectos del español</div>`)[0];
+                popup_7d2e51917eb57ab8c296a69950ab743f.setContent(html_ca02406f339ac5f2ac59c1efc4bedf9f);
+            
+        
+
+        marker_7c832b644b004ad22f2946c2cec41ef5.bindPopup(popup_7d2e51917eb57ab8c296a69950ab743f)
+        ;
+
+        
+    
+    
+            marker_7c832b644b004ad22f2946c2cec41ef5.bindTooltip(
+                `<div>
+                     Universidad de Granada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c832b644b004ad22f2946c2cec41ef5.setIcon(icon_45674f38684c491e1def85c5ca2aec2e);
+            
+    
+            var marker_7e459f8d16c500133118a4a34d6133b7 = L.marker(
+                [28.4813, -16.3158],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_b5c3d8cdf3322c9185d62e1339c8dbc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_849389985cefe7942f33ae9aaf5e666c = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_a7582caf20dff5c46f8c844989b8f939 = $(`<div id="html_a7582caf20dff5c46f8c844989b8f939" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de La Laguna<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Antonio Jesús Sosa Alonso<br><b>Detalle:</b> SFB A09</div>`)[0];
+                popup_849389985cefe7942f33ae9aaf5e666c.setContent(html_a7582caf20dff5c46f8c844989b8f939);
+            
+        
+
+        marker_7e459f8d16c500133118a4a34d6133b7.bindPopup(popup_849389985cefe7942f33ae9aaf5e666c)
+        ;
+
+        
+    
+    
+            marker_7e459f8d16c500133118a4a34d6133b7.bindTooltip(
+                `<div>
+                     Universidad de La Laguna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e459f8d16c500133118a4a34d6133b7.setIcon(icon_b5c3d8cdf3322c9185d62e1339c8dbc7);
+            
+    
+            var marker_f34f1221d72e3f1d6dcc536ce4c6684c = L.marker(
+                [28.4813, -16.3158],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_8c3097a7d4997abfa8ed7c09d9a3971f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd01a043cf130f34ab97288400ee13cf = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_2d616b110350ddf645bf9cfc73df9b84 = $(`<div id="html_2d616b110350ddf645bf9cfc73df9b84" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de La Laguna<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Josefa Dorta Luis<br><b>Detalle:</b> SFB A09</div>`)[0];
+                popup_bd01a043cf130f34ab97288400ee13cf.setContent(html_2d616b110350ddf645bf9cfc73df9b84);
+            
+        
+
+        marker_f34f1221d72e3f1d6dcc536ce4c6684c.bindPopup(popup_bd01a043cf130f34ab97288400ee13cf)
+        ;
+
+        
+    
+    
+            marker_f34f1221d72e3f1d6dcc536ce4c6684c.bindTooltip(
+                `<div>
+                     Universidad de La Laguna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f34f1221d72e3f1d6dcc536ce4c6684c.setIcon(icon_8c3097a7d4997abfa8ed7c09d9a3971f);
+            
+    
+            var marker_2fbab168288f3015163e627011f4bcd4 = L.marker(
+                [42.4667, -2.45],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_0560c48291d8c1c37e258d3349d64cf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0e1f3de593da8d05fe0784deeed460f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_f5462c9d43ba15ea4635183d5128da53 = $(`<div id="html_f5462c9d43ba15ea4635183d5128da53" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de La Rioja<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra. Tamara Serrano Moreno<br><b>Detalle:</b> Investigador visitante: WiSe 2024/25</div>`)[0];
+                popup_b0e1f3de593da8d05fe0784deeed460f.setContent(html_f5462c9d43ba15ea4635183d5128da53);
+            
+        
+
+        marker_2fbab168288f3015163e627011f4bcd4.bindPopup(popup_b0e1f3de593da8d05fe0784deeed460f)
+        ;
+
+        
+    
+    
+            marker_2fbab168288f3015163e627011f4bcd4.bindTooltip(
+                `<div>
+                     Universidad de La Rioja
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fbab168288f3015163e627011f4bcd4.setIcon(icon_0560c48291d8c1c37e258d3349d64cf8);
+            
+    
+            var marker_5f90d24730b85750b3a616a636b6bc02 = L.marker(
+                [28.0997, -15.4134],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_f22951d1c6a450267f8291af74865afa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ce9ecdd07d373cf997d43971eb20b16 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_1373f3eb1d5f5ce8ab5e23a41bf6987c = $(`<div id="html_1373f3eb1d5f5ce8ab5e23a41bf6987c" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Las Palmas de Gran Canaria<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Marta Samper Hernández <br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_3ce9ecdd07d373cf997d43971eb20b16.setContent(html_1373f3eb1d5f5ce8ab5e23a41bf6987c);
+            
+        
+
+        marker_5f90d24730b85750b3a616a636b6bc02.bindPopup(popup_3ce9ecdd07d373cf997d43971eb20b16)
+        ;
+
+        
+    
+    
+            marker_5f90d24730b85750b3a616a636b6bc02.bindTooltip(
+                `<div>
+                     Universidad de Las Palmas de Gran Canaria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f90d24730b85750b3a616a636b6bc02.setIcon(icon_f22951d1c6a450267f8291af74865afa);
+            
+    
+            var marker_9efe318b7ced8b675e1f70b2401dbb88 = L.marker(
+                [28.0997, -15.4134],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_22ed9b6e4d69cccf6ff54674f22924a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c88429df9916bd0ec70589f1ebeedad = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_e825edafcf03995fef39f414e199d2f5 = $(`<div id="html_e825edafcf03995fef39f414e199d2f5" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Las Palmas de Gran Canaria<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Marta Samper Hernández <br><b>Detalle:</b> SFB A09</div>`)[0];
+                popup_3c88429df9916bd0ec70589f1ebeedad.setContent(html_e825edafcf03995fef39f414e199d2f5);
+            
+        
+
+        marker_9efe318b7ced8b675e1f70b2401dbb88.bindPopup(popup_3c88429df9916bd0ec70589f1ebeedad)
+        ;
+
+        
+    
+    
+            marker_9efe318b7ced8b675e1f70b2401dbb88.bindTooltip(
+                `<div>
+                     Universidad de Las Palmas de Gran Canaria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9efe318b7ced8b675e1f70b2401dbb88.setIcon(icon_22ed9b6e4d69cccf6ff54674f22924a0);
+            
+    
+            var marker_546706b111f509f52d77688a928cdb89 = L.marker(
+                [38.0174, -1.166],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_deb1b7631c0a744d845dab2722f3f800 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcc08f68776c5ee0fc5a52764e0143d2 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_dff0a0242d1e2a8cb821d770e5e01f72 = $(`<div id="html_dff0a0242d1e2a8cb821d770e5e01f72" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Murcia<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra. Lucía Amorós Poveda<br><b>Detalle:</b> COSER-UD; Juegos del español</div>`)[0];
+                popup_bcc08f68776c5ee0fc5a52764e0143d2.setContent(html_dff0a0242d1e2a8cb821d770e5e01f72);
+            
+        
+
+        marker_546706b111f509f52d77688a928cdb89.bindPopup(popup_bcc08f68776c5ee0fc5a52764e0143d2)
+        ;
+
+        
+    
+    
+            marker_546706b111f509f52d77688a928cdb89.bindTooltip(
+                `<div>
+                     Universidad de Murcia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_546706b111f509f52d77688a928cdb89.setIcon(icon_deb1b7631c0a744d845dab2722f3f800);
+            
+    
+            var marker_79f51f4769024c3b5e0c5bef82a30874 = L.marker(
+                [43.3618, -5.8494],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_2529aa5dd56ec32e21e0ff17e2a5c046 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_630f7f1ce0a8a84494ba568bff496cb4 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_4df408c77179837f010907c3d6845632 = $(`<div id="html_4df408c77179837f010907c3d6845632" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Oviedo<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dr. Miguel Rodríguez Monteavaro<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_630f7f1ce0a8a84494ba568bff496cb4.setContent(html_4df408c77179837f010907c3d6845632);
+            
+        
+
+        marker_79f51f4769024c3b5e0c5bef82a30874.bindPopup(popup_630f7f1ce0a8a84494ba568bff496cb4)
+        ;
+
+        
+    
+    
+            marker_79f51f4769024c3b5e0c5bef82a30874.bindTooltip(
+                `<div>
+                     Universidad de Oviedo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79f51f4769024c3b5e0c5bef82a30874.setIcon(icon_2529aa5dd56ec32e21e0ff17e2a5c046);
+            
+    
+            var marker_db236aa509d674d72bca8400f1028f37 = L.marker(
+                [43.3618, -5.8494],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_fabb62e68c8cdd02464f5fc88749eaed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05227bfbfbc21deb383d927313f6106e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_8d0f486b482fbd3257ce648711efe3ae = $(`<div id="html_8d0f486b482fbd3257ce648711efe3ae" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Oviedo<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Ramón d'Andrés Díaz<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_05227bfbfbc21deb383d927313f6106e.setContent(html_8d0f486b482fbd3257ce648711efe3ae);
+            
+        
+
+        marker_db236aa509d674d72bca8400f1028f37.bindPopup(popup_05227bfbfbc21deb383d927313f6106e)
+        ;
+
+        
+    
+    
+            marker_db236aa509d674d72bca8400f1028f37.bindTooltip(
+                `<div>
+                     Universidad de Oviedo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db236aa509d674d72bca8400f1028f37.setIcon(icon_fabb62e68c8cdd02464f5fc88749eaed);
+            
+    
+            var marker_afb129dc29ea0c0d87c3ac674fd9205b = L.marker(
+                [42.882, -8.545],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_00825593507f8fa2b6f9ed7ee9576047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_527c87b804cfaa602808e32e76bce21a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_37107f09ff0c4e49d27202b54d93137e = $(`<div id="html_37107f09ff0c4e49d27202b54d93137e" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Santiago de Compostela<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Xulio Sousa<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_527c87b804cfaa602808e32e76bce21a.setContent(html_37107f09ff0c4e49d27202b54d93137e);
+            
+        
+
+        marker_afb129dc29ea0c0d87c3ac674fd9205b.bindPopup(popup_527c87b804cfaa602808e32e76bce21a)
+        ;
+
+        
+    
+    
+            marker_afb129dc29ea0c0d87c3ac674fd9205b.bindTooltip(
+                `<div>
+                     Universidad de Santiago de Compostela
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afb129dc29ea0c0d87c3ac674fd9205b.setIcon(icon_00825593507f8fa2b6f9ed7ee9576047);
+            
+    
+            var marker_dac00d95b9a0919cf15339b13101173b = L.marker(
+                [37.3801, -5.9916],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_a1ec4a5a699a7ac694a113d8c6d96b2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9d3483d5bc457b7fd6f7b76ea545a4e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_62bcb80ce0d59d6550de482ccfdc68f7 = $(`<div id="html_62bcb80ce0d59d6550de482ccfdc68f7" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad de Sevilla<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Santiago de Rey<br><b>Detalle:</b> Investigador visitante: Erasmus 2025</div>`)[0];
+                popup_e9d3483d5bc457b7fd6f7b76ea545a4e.setContent(html_62bcb80ce0d59d6550de482ccfdc68f7);
+            
+        
+
+        marker_dac00d95b9a0919cf15339b13101173b.bindPopup(popup_e9d3483d5bc457b7fd6f7b76ea545a4e)
+        ;
+
+        
+    
+    
+            marker_dac00d95b9a0919cf15339b13101173b.bindTooltip(
+                `<div>
+                     Universidad de Sevilla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dac00d95b9a0919cf15339b13101173b.setIcon(icon_a1ec4a5a699a7ac694a113d8c6d96b2f);
+            
+    
+            var marker_98a57f89de9d01333cfd83c0cb736cfd = L.marker(
+                [43.3301, -2.9718],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_2b4bc20d21f690964854428604b50436 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc42e7a9854461198efa179d8290cc0c = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_03c0cdf5be4a444e0abed63c8756b760 = $(`<div id="html_03c0cdf5be4a444e0abed63c8756b760" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universidad del País Vasco<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Gotzon Aurrekoetxea<br><b>Detalle:</b> Eventos académicos: Wedisyn</div>`)[0];
+                popup_cc42e7a9854461198efa179d8290cc0c.setContent(html_03c0cdf5be4a444e0abed63c8756b760);
+            
+        
+
+        marker_98a57f89de9d01333cfd83c0cb736cfd.bindPopup(popup_cc42e7a9854461198efa179d8290cc0c)
+        ;
+
+        
+    
+    
+            marker_98a57f89de9d01333cfd83c0cb736cfd.bindTooltip(
+                `<div>
+                     Universidad del País Vasco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98a57f89de9d01333cfd83c0cb736cfd.setIcon(icon_2b4bc20d21f690964854428604b50436);
+            
+    
+            var marker_6f65230b0087711e9d9efbe33a417f22 = L.marker(
+                [41.5, 2.1047],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_c77223860131bd9817e5e83a0c70e743 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f7a26d7ca9cb9efe0e178cb6d83bf71 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_f1615de1e4419b0b97988a9f9b78b5c8 = $(`<div id="html_f1615de1e4419b0b97988a9f9b78b5c8" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat Autònoma de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Matthias Raab<br><b>Detalle:</b> Atlas histórico del español</div>`)[0];
+                popup_0f7a26d7ca9cb9efe0e178cb6d83bf71.setContent(html_f1615de1e4419b0b97988a9f9b78b5c8);
+            
+        
+
+        marker_6f65230b0087711e9d9efbe33a417f22.bindPopup(popup_0f7a26d7ca9cb9efe0e178cb6d83bf71)
+        ;
+
+        
+    
+    
+            marker_6f65230b0087711e9d9efbe33a417f22.bindTooltip(
+                `<div>
+                     Universitat Autònoma de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6f65230b0087711e9d9efbe33a417f22.setIcon(icon_c77223860131bd9817e5e83a0c70e743);
+            
+    
+            var marker_60c86d06e5b3d507c0645efa0b85f697 = L.marker(
+                [41.5, 2.1047],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_dfa86879cf4d0abe46dd305b32ba9fe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_519a817f90f5f94ce17b348032a04f3d = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_fe9da6c2503df34366b989bde54bbbf2 = $(`<div id="html_fe9da6c2503df34366b989bde54bbbf2" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat Autònoma de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Matthias Raab<br><b>Detalle:</b> Investigador visitante: Febrero-Julio 2025</div>`)[0];
+                popup_519a817f90f5f94ce17b348032a04f3d.setContent(html_fe9da6c2503df34366b989bde54bbbf2);
+            
+        
+
+        marker_60c86d06e5b3d507c0645efa0b85f697.bindPopup(popup_519a817f90f5f94ce17b348032a04f3d)
+        ;
+
+        
+    
+    
+            marker_60c86d06e5b3d507c0645efa0b85f697.bindTooltip(
+                `<div>
+                     Universitat Autònoma de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60c86d06e5b3d507c0645efa0b85f697.setIcon(icon_dfa86879cf4d0abe46dd305b32ba9fe5);
+            
+    
+            var marker_1f8b7750acb6c0804ccffb4d6582d84a = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_b4a9a3a170be3e982e6a67a40b63dde8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44517cb6ad3fcf282f39bd0761d7a5a7 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_30e9b2f4fff90403ab7fee33234775db = $(`<div id="html_30e9b2f4fff90403ab7fee33234775db" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dr. Andreu Sentí<br><b>Detalle:</b> Investigador visitante: Romania und Religionen - SoSe 2025; Gramaticalización del futuro y condicional en las lenguas ibero- y galorománicas</div>`)[0];
+                popup_44517cb6ad3fcf282f39bd0761d7a5a7.setContent(html_30e9b2f4fff90403ab7fee33234775db);
+            
+        
+
+        marker_1f8b7750acb6c0804ccffb4d6582d84a.bindPopup(popup_44517cb6ad3fcf282f39bd0761d7a5a7)
+        ;
+
+        
+    
+    
+            marker_1f8b7750acb6c0804ccffb4d6582d84a.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f8b7750acb6c0804ccffb4d6582d84a.setIcon(icon_b4a9a3a170be3e982e6a67a40b63dde8);
+            
+    
+            var marker_20b79658efd2a48216f6e80104d0c928 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_e2521ce53b14b7e9a4b2119f4f6affae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9976bd48194410e35b2cc809a0b9b151 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_905f6e4cab59a057dc2e26c4761e6d36 = $(`<div id="html_905f6e4cab59a057dc2e26c4761e6d36" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dr. Andreu Sentí<br><b>Detalle:</b> Eventos académicos: Wedisyn, EDELC</div>`)[0];
+                popup_9976bd48194410e35b2cc809a0b9b151.setContent(html_905f6e4cab59a057dc2e26c4761e6d36);
+            
+        
+
+        marker_20b79658efd2a48216f6e80104d0c928.bindPopup(popup_9976bd48194410e35b2cc809a0b9b151)
+        ;
+
+        
+    
+    
+            marker_20b79658efd2a48216f6e80104d0c928.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_20b79658efd2a48216f6e80104d0c928.setIcon(icon_e2521ce53b14b7e9a4b2119f4f6affae);
+            
+    
+            var marker_ae5f930533d238fb1440171ce144cd08 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_10e00f35f50e0bd80f0b42fc16a04c45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30f920c09bc57db1b983afdb80b2e1bf = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_1bbd19aa128c83f58592ff7c94c96860 = $(`<div id="html_1bbd19aa128c83f58592ff7c94c96860" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Dra. Anna Pineda<br><b>Detalle:</b> Eventos académicos: Wedisyn, EDELC</div>`)[0];
+                popup_30f920c09bc57db1b983afdb80b2e1bf.setContent(html_1bbd19aa128c83f58592ff7c94c96860);
+            
+        
+
+        marker_ae5f930533d238fb1440171ce144cd08.bindPopup(popup_30f920c09bc57db1b983afdb80b2e1bf)
+        ;
+
+        
+    
+    
+            marker_ae5f930533d238fb1440171ce144cd08.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae5f930533d238fb1440171ce144cd08.setIcon(icon_10e00f35f50e0bd80f0b42fc16a04c45);
+            
+    
+            var marker_8e468997d66b3f14f1d617e56b9aa1c2 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_19fecc93686ee9b22f5642db7472ed34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f32d8f3cd6da80b8cb3d223d7b448e4 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_0d18c8e89c1cd209c652942f629a9616 = $(`<div id="html_0d18c8e89c1cd209c652942f629a9616" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. María-Pilar Perea<br><b>Detalle:</b> Eventos académicos: Wedisyn, EDELC</div>`)[0];
+                popup_6f32d8f3cd6da80b8cb3d223d7b448e4.setContent(html_0d18c8e89c1cd209c652942f629a9616);
+            
+        
+
+        marker_8e468997d66b3f14f1d617e56b9aa1c2.bindPopup(popup_6f32d8f3cd6da80b8cb3d223d7b448e4)
+        ;
+
+        
+    
+    
+            marker_8e468997d66b3f14f1d617e56b9aa1c2.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e468997d66b3f14f1d617e56b9aa1c2.setIcon(icon_19fecc93686ee9b22f5642db7472ed34);
+            
+    
+            var marker_605fbdbe51153d1d463a3e7698f83ae7 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_076bbfa65acc83ea65ff1575e1020355 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705ee4f00008eae9cba99d4a6a23c310 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_1cf176374ccb7a92f534a461745035ad = $(`<div id="html_1cf176374ccb7a92f534a461745035ad" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de Barcelona<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Mar Garachana<br><b>Detalle:</b> Historia de la lengua, contacto de lenguas y variedades</div>`)[0];
+                popup_705ee4f00008eae9cba99d4a6a23c310.setContent(html_1cf176374ccb7a92f534a461745035ad);
+            
+        
+
+        marker_605fbdbe51153d1d463a3e7698f83ae7.bindPopup(popup_705ee4f00008eae9cba99d4a6a23c310)
+        ;
+
+        
+    
+    
+            marker_605fbdbe51153d1d463a3e7698f83ae7.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_605fbdbe51153d1d463a3e7698f83ae7.setIcon(icon_076bbfa65acc83ea65ff1575e1020355);
+            
+    
+            var marker_2a792025670b4020a7d26268940997ab = L.marker(
+                [39.636, 2.648],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_aa9669e5e1516c526417b891dac1b32d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_529a57e04e0254510a9963659781a0f4 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_b6dad65ee152c14872f246535eb07de9 = $(`<div id="html_b6dad65ee152c14872f246535eb07de9" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de les Illes Balears<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr Andrés Enrique-Arias<br><b>Detalle:</b> Atlas histórico del español</div>`)[0];
+                popup_529a57e04e0254510a9963659781a0f4.setContent(html_b6dad65ee152c14872f246535eb07de9);
+            
+        
+
+        marker_2a792025670b4020a7d26268940997ab.bindPopup(popup_529a57e04e0254510a9963659781a0f4)
+        ;
+
+        
+    
+    
+            marker_2a792025670b4020a7d26268940997ab.bindTooltip(
+                `<div>
+                     Universitat de les Illes Balears
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a792025670b4020a7d26268940997ab.setIcon(icon_aa9669e5e1516c526417b891dac1b32d);
+            
+    
+            var marker_c9d61a5337485494ad5c163af831b623 = L.marker(
+                [39.636, 2.648],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_c8c868fc8b230c2cd1aecdc6e5d91f07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa344ec483a83f1787cbb9a00346931b = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_af3120c8f3976f7590da05accd796bbf = $(`<div id="html_af3120c8f3976f7590da05accd796bbf" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de les Illes Balears<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Maria del Mar Vanrell Bosch<br><b>Detalle:</b> Eventos académicos: EDELC</div>`)[0];
+                popup_fa344ec483a83f1787cbb9a00346931b.setContent(html_af3120c8f3976f7590da05accd796bbf);
+            
+        
+
+        marker_c9d61a5337485494ad5c163af831b623.bindPopup(popup_fa344ec483a83f1787cbb9a00346931b)
+        ;
+
+        
+    
+    
+            marker_c9d61a5337485494ad5c163af831b623.bindTooltip(
+                `<div>
+                     Universitat de les Illes Balears
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9d61a5337485494ad5c163af831b623.setIcon(icon_c8c868fc8b230c2cd1aecdc6e5d91f07);
+            
+    
+            var marker_2ad509e6e6b6901a337519d595372340 = L.marker(
+                [39.636, 2.648],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_f3d493483ab2f669fc950868514f652d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bccf02ec82c98c07be62d2c8fa2bba0d = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_06cb71afaf70b9c7bd3e2047d8a70558 = $(`<div id="html_06cb71afaf70b9c7bd3e2047d8a70558" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de les Illes Balears<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr Andrés Enrique-Arias<br><b>Detalle:</b> Estancia posdoctoral: Biblia medieval</div>`)[0];
+                popup_bccf02ec82c98c07be62d2c8fa2bba0d.setContent(html_06cb71afaf70b9c7bd3e2047d8a70558);
+            
+        
+
+        marker_2ad509e6e6b6901a337519d595372340.bindPopup(popup_bccf02ec82c98c07be62d2c8fa2bba0d)
+        ;
+
+        
+    
+    
+            marker_2ad509e6e6b6901a337519d595372340.bindTooltip(
+                `<div>
+                     Universitat de les Illes Balears
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ad509e6e6b6901a337519d595372340.setIcon(icon_f3d493483ab2f669fc950868514f652d);
+            
+    
+            var marker_82db81c8dd6c2a5d9c84598fdd3c6206 = L.marker(
+                [39.4743, -0.3588],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_36f905cdc7d4b9e2422b037665a7df99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34139c84d2169873c6d3630436c1539f = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_f822688e41da6fdb5906927584740b3e = $(`<div id="html_f822688e41da6fdb5906927584740b3e" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de València<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Aina Torres Latorre<br><b>Detalle:</b> Investigador visitante: SoSe 2025 ; Gramaticalización del futuro y condicional en las lenguas ibero- y galorománicas</div>`)[0];
+                popup_34139c84d2169873c6d3630436c1539f.setContent(html_f822688e41da6fdb5906927584740b3e);
+            
+        
+
+        marker_82db81c8dd6c2a5d9c84598fdd3c6206.bindPopup(popup_34139c84d2169873c6d3630436c1539f)
+        ;
+
+        
+    
+    
+            marker_82db81c8dd6c2a5d9c84598fdd3c6206.bindTooltip(
+                `<div>
+                     Universitat de València
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_82db81c8dd6c2a5d9c84598fdd3c6206.setIcon(icon_36f905cdc7d4b9e2422b037665a7df99);
+            
+    
+            var marker_d0cf597d3f45b048ecbd174c81129a67 = L.marker(
+                [39.4743, -0.3588],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_593a858af9fc7c04739ef109fae4d756 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d72c775707bd877c94643438cbe05c9 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_5dea64a6f94af2681375d63da4ee14f8 = $(`<div id="html_5dea64a6f94af2681375d63da4ee14f8" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de València<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dr. Manuel Peréz Saldanya<br><b>Detalle:</b> Codirección doctorado Aina Torres Latorre</div>`)[0];
+                popup_2d72c775707bd877c94643438cbe05c9.setContent(html_5dea64a6f94af2681375d63da4ee14f8);
+            
+        
+
+        marker_d0cf597d3f45b048ecbd174c81129a67.bindPopup(popup_2d72c775707bd877c94643438cbe05c9)
+        ;
+
+        
+    
+    
+            marker_d0cf597d3f45b048ecbd174c81129a67.bindTooltip(
+                `<div>
+                     Universitat de València
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0cf597d3f45b048ecbd174c81129a67.setIcon(icon_593a858af9fc7c04739ef109fae4d756);
+            
+    
+            var marker_e7c8860a96ddf5cc1e293f2dcbc16cf9 = L.marker(
+                [39.4743, -0.3588],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_614685cb4c423fdb5f5107633da2cf9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d60edb855c0ce5dbcd85c320b8eaeac = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_90f730b9a36ee01a975c2ec8184ab86f = $(`<div id="html_90f730b9a36ee01a975c2ec8184ab86f" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de València<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Aina Torres Latorre<br><b>Detalle:</b> Eventos académicos: Wedisyn, EDELC</div>`)[0];
+                popup_5d60edb855c0ce5dbcd85c320b8eaeac.setContent(html_90f730b9a36ee01a975c2ec8184ab86f);
+            
+        
+
+        marker_e7c8860a96ddf5cc1e293f2dcbc16cf9.bindPopup(popup_5d60edb855c0ce5dbcd85c320b8eaeac)
+        ;
+
+        
+    
+    
+            marker_e7c8860a96ddf5cc1e293f2dcbc16cf9.bindTooltip(
+                `<div>
+                     Universitat de València
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7c8860a96ddf5cc1e293f2dcbc16cf9.setIcon(icon_614685cb4c423fdb5f5107633da2cf9f);
+            
+    
+            var marker_f81217cfe301d3885a668d4678d19a50 = L.marker(
+                [39.4743, -0.3588],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_7a98220e61021281b4e466db0015fffa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4851ef945a32b7a8e83ef371b8b0cec = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_10a4df10f84307e88b0aa4e382d34ca2 = $(`<div id="html_10a4df10f84307e88b0aa4e382d34ca2" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat de València<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Prof. Dra. Maria Estellés<br><b>Detalle:</b> Coautoría</div>`)[0];
+                popup_d4851ef945a32b7a8e83ef371b8b0cec.setContent(html_10a4df10f84307e88b0aa4e382d34ca2);
+            
+        
+
+        marker_f81217cfe301d3885a668d4678d19a50.bindPopup(popup_d4851ef945a32b7a8e83ef371b8b0cec)
+        ;
+
+        
+    
+    
+            marker_f81217cfe301d3885a668d4678d19a50.bindTooltip(
+                `<div>
+                     Universitat de València
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f81217cfe301d3885a668d4678d19a50.setIcon(icon_7a98220e61021281b4e466db0015fffa);
+            
+    
+            var marker_b925aa50f7f0a9ee2b3ea7d3089943a9 = L.marker(
+                [41.389, 2.19],
+                {
+}
+            ).addTo(marker_cluster_638e4eb94a9ed84c51768f31089550fa);
+        
+    
+            var icon_bc311f29856b35e9af9f8ce0c3e0b147 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14d64e58b219ccf57ca8babf80a4f61a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_fac32efbc5bf0c6809eb84dff2db57ec = $(`<div id="html_fac32efbc5bf0c6809eb84dff2db57ec" style="width: 100.0%; height: 100.0%;"><b>Área:</b> Lingüística<br><b>Universidad:</b> Universitat Pompeu Fabra<br><b>Colaboración:</b> Investigación<br><b>Nombre:</b> Daniel Arturo Jiménez Casas<br><b>Detalle:</b> Investigador visitante; Open NLP Strategies for Corpus Building, Parsing, and Text Processing; doctorando</div>`)[0];
+                popup_14d64e58b219ccf57ca8babf80a4f61a.setContent(html_fac32efbc5bf0c6809eb84dff2db57ec);
+            
+        
+
+        marker_b925aa50f7f0a9ee2b3ea7d3089943a9.bindPopup(popup_14d64e58b219ccf57ca8babf80a4f61a)
+        ;
+
+        
+    
+    
+            marker_b925aa50f7f0a9ee2b3ea7d3089943a9.bindTooltip(
+                `<div>
+                     Universitat Pompeu Fabra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b925aa50f7f0a9ee2b3ea7d3089943a9.setIcon(icon_bc311f29856b35e9af9f8ce0c3e0b147);
+            
+    
+            marker_cluster_638e4eb94a9ed84c51768f31089550fa.addTo(map_fd49d853c00ce07cc6870191dcc00817);
+        
+    
+            map_fd49d853c00ce07cc6870191dcc00817.fitBounds(
+                [[27.5, -18.5], [44, 4]],
+                {}
+            );
+        
+</script>
+</html>

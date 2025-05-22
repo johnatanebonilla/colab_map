@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20ab11face7e8a181177456536314230 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    z-index: 9999;
+    background: rgba(255,255,255,0.95);
+    padding: 10px 30px 6px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.2;
+">
+    Movilidad Erasmus - HU Berlin
+</div>
+    
+<div id="tablas-erasmus" style="
+    position: fixed;
+    top: 90px;
+    left: 60px;
+    z-index: 9999;
+    background: rgba(255,255,255,0.95);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888;
+    max-width: 400px;
+    min-width: 320px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+">
+<style>
+#tablas-erasmus .table-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: fit-content;
+}
+#tablas-erasmus table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 300px;
+}
+#tablas-erasmus th, #tablas-erasmus td {
+    border: 1px solid #333;
+    padding: 5px 8px;
+    text-align: center;
+}
+#tablas-erasmus th {
+    background-color: #dddddd;
+}
+#tablas-erasmus caption, #tablas-erasmus .footnote {
+    margin-top: 8px;
+    font-size: 0.85em;
+    text-align: left;
+}
+#tablas-erasmus h2 {
+    margin-top: 0;
+}
+</style>
+<h2 style="margin: 12px 0 8px 12px; font-size: 15px;">Spanien gesamt</h2>
+<div class="table-container">
+    <table>
+        <caption><strong>Studierendenmobilität Erasmus+</strong></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>2021/22</th>
+                <th>2022/23</th>
+                <th>2023/24*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>Outgoing</strong></td>
+                <td>Studium</td>
+                <td>38</td>
+                <td>72</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>Praktikum</td>
+                <td>23</td>
+                <td>11</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td><strong>Gesamt</strong></td>
+                <td><strong>61</strong></td>
+                <td><strong>83</strong></td>
+                <td><strong>78</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Incoming**</strong></td>
+                <td>18</td>
+                <td>18</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footnote">
+        * Stand 04/2024, laufender Jahrgang<br>
+        ** Praktika Incoming sind nicht erfasst
+    </div>
+</div>
+<div class="table-container">
+    <table>
+        <caption><strong>Mitarbeitendenmobilität Erasmus+</strong></caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>2021/22</th>
+                <th>2022/23</th>
+                <th>2023/24*</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>Outgoing**</strong></td>
+                <td>Lehre</td>
+                <td>12</td>
+                <td>1</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Fort- und Weiterbildung</td>
+                <td>9</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><strong>Gesamt</strong></td>
+                <td><strong>21</strong></td>
+                <td><strong>4</strong></td>
+                <td><strong>10</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footnote">
+        * Stand 04/2024, laufender Jahrgang<br>
+        ** Mobilitäten Incoming sind nicht erfasst<br>
+        (Stand September 2024)
+    </div>
+</div>
+</div>
+    
+            <div class="folium-map" id="map_20ab11face7e8a181177456536314230" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20ab11face7e8a181177456536314230 = L.map(
+                "map_20ab11face7e8a181177456536314230",
+                {
+                    center: [36.5, -6.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b971c3effea6a82c7d8fae0d7aebec63 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b971c3effea6a82c7d8fae0d7aebec63.addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var marker_6cad721c1cab90fe3b83fae84348b29d = L.marker(
+                [37.1899, -3.6025],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_1cef9d977cb908c33c17f45717e05c70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d54f7b52a65c432b99605077d4d71e48 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_8e4d915ccae6966a9bad749e614960c7 = $(`<div id="html_8e4d915ccae6966a9bad749e614960c7" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad de Granada<br><b>Latitud:</b> 37.1899<br><b>Longitud:</b> -3.6025</div>`)[0];
+                popup_d54f7b52a65c432b99605077d4d71e48.setContent(html_8e4d915ccae6966a9bad749e614960c7);
+            
+        
+
+        marker_6cad721c1cab90fe3b83fae84348b29d.bindPopup(popup_d54f7b52a65c432b99605077d4d71e48)
+        ;
+
+        
+    
+    
+            marker_6cad721c1cab90fe3b83fae84348b29d.bindTooltip(
+                `<div>
+                     Universidad de Granada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cad721c1cab90fe3b83fae84348b29d.setIcon(icon_1cef9d977cb908c33c17f45717e05c70);
+            
+    
+            var marker_0433a4c9c0118a497a7dc62bebef09a4 = L.marker(
+                [37.3801, -5.9916],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_1d114287200a2cad2c55050cf0cc7e47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eacf41a107c2a13996e0371d238e365 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_a4c0ac627fdb1d41625b76cb0b3dc160 = $(`<div id="html_a4c0ac627fdb1d41625b76cb0b3dc160" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad de Sevilla<br><b>Latitud:</b> 37.3801<br><b>Longitud:</b> -5.9916</div>`)[0];
+                popup_6eacf41a107c2a13996e0371d238e365.setContent(html_a4c0ac627fdb1d41625b76cb0b3dc160);
+            
+        
+
+        marker_0433a4c9c0118a497a7dc62bebef09a4.bindPopup(popup_6eacf41a107c2a13996e0371d238e365)
+        ;
+
+        
+    
+    
+            marker_0433a4c9c0118a497a7dc62bebef09a4.bindTooltip(
+                `<div>
+                     Universidad de Sevilla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0433a4c9c0118a497a7dc62bebef09a4.setIcon(icon_1d114287200a2cad2c55050cf0cc7e47);
+            
+    
+            var marker_c33ca0200b686f31a4ed0e62c59ecf12 = L.marker(
+                [39.4743, -0.3588],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_8aaf5c5272893f8538b267206d01312a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f6007aab0a79109b2db6a979dc772d6 = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_0222a5c43a4ef03c9659a7594a7304d2 = $(`<div id="html_0222a5c43a4ef03c9659a7594a7304d2" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universitat de València<br><b>Latitud:</b> 39.4743<br><b>Longitud:</b> -0.3588</div>`)[0];
+                popup_3f6007aab0a79109b2db6a979dc772d6.setContent(html_0222a5c43a4ef03c9659a7594a7304d2);
+            
+        
+
+        marker_c33ca0200b686f31a4ed0e62c59ecf12.bindPopup(popup_3f6007aab0a79109b2db6a979dc772d6)
+        ;
+
+        
+    
+    
+            marker_c33ca0200b686f31a4ed0e62c59ecf12.bindTooltip(
+                `<div>
+                     Universitat de València
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c33ca0200b686f31a4ed0e62c59ecf12.setIcon(icon_8aaf5c5272893f8538b267206d01312a);
+            
+    
+            var marker_05d354734799f78681d3c165a2b0b45b = L.marker(
+                [40.4451, -3.7296],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_9e27a1aee4299ba1602cdc9e0d67d3ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69f184dc569574f996a584bd691fd84e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_e7726f22fe41fb43deeddad327d96704 = $(`<div id="html_e7726f22fe41fb43deeddad327d96704" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad Complutense de Madrid<br><b>Latitud:</b> 40.4451<br><b>Longitud:</b> -3.7296</div>`)[0];
+                popup_69f184dc569574f996a584bd691fd84e.setContent(html_e7726f22fe41fb43deeddad327d96704);
+            
+        
+
+        marker_05d354734799f78681d3c165a2b0b45b.bindPopup(popup_69f184dc569574f996a584bd691fd84e)
+        ;
+
+        
+    
+    
+            marker_05d354734799f78681d3c165a2b0b45b.bindTooltip(
+                `<div>
+                     Universidad Complutense de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05d354734799f78681d3c165a2b0b45b.setIcon(icon_9e27a1aee4299ba1602cdc9e0d67d3ed);
+            
+    
+            var marker_79562653ab9fa94c2625d04455a05a51 = L.marker(
+                [40.4829, -3.3631],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_a23eefc4b8ce5f8046cedf435875b075 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd3ad2206c1f373f42cdad7e9c232b8a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_a361c524a39a9b8b77fa3bf1282caa01 = $(`<div id="html_a361c524a39a9b8b77fa3bf1282caa01" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad de Alcalá<br><b>Latitud:</b> 40.4829<br><b>Longitud:</b> -3.3631</div>`)[0];
+                popup_fd3ad2206c1f373f42cdad7e9c232b8a.setContent(html_a361c524a39a9b8b77fa3bf1282caa01);
+            
+        
+
+        marker_79562653ab9fa94c2625d04455a05a51.bindPopup(popup_fd3ad2206c1f373f42cdad7e9c232b8a)
+        ;
+
+        
+    
+    
+            marker_79562653ab9fa94c2625d04455a05a51.bindTooltip(
+                `<div>
+                     Universidad de Alcalá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79562653ab9fa94c2625d04455a05a51.setIcon(icon_a23eefc4b8ce5f8046cedf435875b075);
+            
+    
+            var marker_6afc1ad2b1ff1f08f30783f88c6b91d5 = L.marker(
+                [40.544, -3.692],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_1d1ef6e740555d93f427b6647f320c17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96e980aa3f13a5ce6af3bede76bd88db = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_7eb3fa08531f5981cf94ac5abc378f53 = $(`<div id="html_7eb3fa08531f5981cf94ac5abc378f53" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad Autónoma de Madrid<br><b>Latitud:</b> 40.544<br><b>Longitud:</b> -3.692</div>`)[0];
+                popup_96e980aa3f13a5ce6af3bede76bd88db.setContent(html_7eb3fa08531f5981cf94ac5abc378f53);
+            
+        
+
+        marker_6afc1ad2b1ff1f08f30783f88c6b91d5.bindPopup(popup_96e980aa3f13a5ce6af3bede76bd88db)
+        ;
+
+        
+    
+    
+            marker_6afc1ad2b1ff1f08f30783f88c6b91d5.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6afc1ad2b1ff1f08f30783f88c6b91d5.setIcon(icon_1d1ef6e740555d93f427b6647f320c17);
+            
+    
+            var marker_eb9ddc3b88aa5b76199e14ef2c0d7594 = L.marker(
+                [40.9627, -5.6678],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_98b7bdb8867bdfa08f9a8be609b95177 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_930ee1604f38d8dfc09de475f1f0012a = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_94e0ad6d8a3d9ef54c60fb990b5454c3 = $(`<div id="html_94e0ad6d8a3d9ef54c60fb990b5454c3" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad de Salamanca<br><b>Latitud:</b> 40.9627<br><b>Longitud:</b> -5.6678</div>`)[0];
+                popup_930ee1604f38d8dfc09de475f1f0012a.setContent(html_94e0ad6d8a3d9ef54c60fb990b5454c3);
+            
+        
+
+        marker_eb9ddc3b88aa5b76199e14ef2c0d7594.bindPopup(popup_930ee1604f38d8dfc09de475f1f0012a)
+        ;
+
+        
+    
+    
+            marker_eb9ddc3b88aa5b76199e14ef2c0d7594.bindTooltip(
+                `<div>
+                     Universidad de Salamanca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb9ddc3b88aa5b76199e14ef2c0d7594.setIcon(icon_98b7bdb8867bdfa08f9a8be609b95177);
+            
+    
+            var marker_55b47a3a11d205a0b53a861fa9d7a197 = L.marker(
+                [41.3853, 2.1583],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_2f3087281f31e7d27a2bbb137fe7e7d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39793d83a92e73e145e034eca34040aa = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_afe620013c4a51fa8e74a3bb8e4a2bf2 = $(`<div id="html_afe620013c4a51fa8e74a3bb8e4a2bf2" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universitat de Barcelona<br><b>Latitud:</b> 41.3853<br><b>Longitud:</b> 2.1583</div>`)[0];
+                popup_39793d83a92e73e145e034eca34040aa.setContent(html_afe620013c4a51fa8e74a3bb8e4a2bf2);
+            
+        
+
+        marker_55b47a3a11d205a0b53a861fa9d7a197.bindPopup(popup_39793d83a92e73e145e034eca34040aa)
+        ;
+
+        
+    
+    
+            marker_55b47a3a11d205a0b53a861fa9d7a197.bindTooltip(
+                `<div>
+                     Universitat de Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55b47a3a11d205a0b53a861fa9d7a197.setIcon(icon_2f3087281f31e7d27a2bbb137fe7e7d6);
+            
+    
+            var marker_2cd7e37b19f0db598071e772ebbc974b = L.marker(
+                [42.61371, -5.56073],
+                {
+}
+            ).addTo(map_20ab11face7e8a181177456536314230);
+        
+    
+            var icon_eb943e7575a047338bf52244337c5b72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "globe-europe",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3b4f1af0fc702d0b325607951aa537e = L.popup({
+  "maxWidth": 350,
+  "minWidth": 200,
+});
+
+        
+            
+                var html_0d3264329ae9e699a640bb20e40cdd35 = $(`<div id="html_0d3264329ae9e699a640bb20e40cdd35" style="width: 100.0%; height: 100.0%;"><b>Nombre:</b> Erasmus +<br><b>Universidad:</b> Universidad de León<br><b>Latitud:</b> 42.61371<br><b>Longitud:</b> -5.56073</div>`)[0];
+                popup_c3b4f1af0fc702d0b325607951aa537e.setContent(html_0d3264329ae9e699a640bb20e40cdd35);
+            
+        
+
+        marker_2cd7e37b19f0db598071e772ebbc974b.bindPopup(popup_c3b4f1af0fc702d0b325607951aa537e)
+        ;
+
+        
+    
+    
+            marker_2cd7e37b19f0db598071e772ebbc974b.bindTooltip(
+                `<div>
+                     Universidad de León
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cd7e37b19f0db598071e772ebbc974b.setIcon(icon_eb943e7575a047338bf52244337c5b72);
+            
+    
+            map_20ab11face7e8a181177456536314230.fitBounds(
+                [[27.5, -18.5], [44, 4]],
+                {}
+            );
+        
+</script>
+</html>
